@@ -1,3 +1,5 @@
+// types の Userモジュールを読み込み
+import { User } from "./types";
 //型を明示的に定義
 // var user: {
 //     id: number;
