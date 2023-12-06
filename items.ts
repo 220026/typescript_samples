@@ -1,3 +1,5 @@
+import { Item } from './types'
+
 // 配列
 var itemNames:string[] = ["コーヒー", "紅茶", "ほうじ茶"];
 console.log(itemNames);
