@@ -28,11 +28,35 @@ var filterItems = items.filter((item) => item.price <= borderPrice);
 console.log(filterItems);
 
 //function
-function calculateTotalPrice(price:number, amount:number): number {
+// function calculateTotalPrice(price:number, amount:number): number {
+//    var totalPrice = price * amount; 
+//    return totalPrice;
+// }
+//anonymus function
+// const calculateTotalPrice = function(price:number, amount:number): number {
+//    var totalPrice = price * amount; 
+//    return totalPrice;
+// }
+//arrow function
+const calculateTotalPrice = (price:number, amount:number): number => {
    var totalPrice = price * amount; 
    return totalPrice;
+}
+
+function findItem(id:number) {
+    var result = items.find((item) => item.id == id);
+    return result;
+    // if (result) {
+    //     return result;
+    // } else {
+    //     return { id: 0, name: "", price: 0 };
+    // }
 }
 
 var amount = 5;
 var totalPrice = calculateTotalPrice(item1.price, amount);
 console.log(totalPrice);
+
+var itemId = 5;
+var selectItem = findItem(itemId);
+console.log(selectItem);
